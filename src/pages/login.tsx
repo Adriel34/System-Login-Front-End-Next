@@ -35,7 +35,7 @@ export default function Login() {
             Acesso garantido: digite seu login e desbrave!
           </p>
         </div>
-        <div className="flex flex-col justify-center ml-8">
+        <div className="flex flex-col justify-center ml-8 mr-6">
           <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/3">
               <label className="block text-black-500 font-bold md:text-right mb-1 md:mb-0 pr-4">

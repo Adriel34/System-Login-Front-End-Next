@@ -1,4 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(27, 27, 100) transparent;
+  overflow-x: hidden;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(27, 27, 100);
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.btn {
+  @apply px-4 py-2 rounded-lg hover:bg-blue-800 hover:text-white;
+}
+
+.card-content{
+  @apply bg-gradient-to-r from-purple-600 to-green-500  p-4 rounded-md mb-8
+}
+
+
+.hover-underline:hover {
+  @apply underline cursor-pointer;
+}
+
+.fixed-top {
+  @apply fixed top-0 mt-4;
+}
+.justify-content-between {
+  @apply justify-between;
+}
+.flex-reverse-row {
+  @apply flex-row-reverse;
+}
+.padding-left-3 {
+  @apply pl-3
+}
+
+.padding-left-5 {
+  @apply pl-20
+}
+
+.margin-top-075 {
+  @apply mt-3;
+}
+
+.width-600 {
+  @apply w-[600px];
+}
+
+.padding-left-1 {
+  @apply pl-8;
+}

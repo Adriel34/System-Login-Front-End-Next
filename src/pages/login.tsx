@@ -19,12 +19,12 @@ export default function Login() {
 
   const { signIn } = useLogin();
 
-  const onSubmit: SubmitHandler<SignInForm> = async (data) => {
+  const onSubmit  = async (data: SignInForm) => {
     console.log("data", data);
     await signIn.mutateAsync(data);
   };
   return (
-    <main className="flex flex-row min-h-screen items-center justify-center gap-12 bg-[url('https://cdn.pixabay.com/photo/2016/06/14/03/39/background-1455687_1280.jpg')]">
+    <main className="flex flex-row min-h-screen items-center justify-center gap-12 bg-[url('https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
       <form
         className="w-1/2 flex h-80 mr-12 shadow-lg rounded-lg border border-gray-300 bg-opacity-20 bg-red-200 dark:bg-gray-10"
         onSubmit={handleSubmit(onSubmit)}

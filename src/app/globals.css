@@ -1,6 +1,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 .scrollbar {
@@ -62,4 +65,7 @@
 
 .padding-left-1 {
   @apply pl-8;
+}
+.responsive-margin-top-40 {
+ @apply md:mt-40 sm:mt-0
 }

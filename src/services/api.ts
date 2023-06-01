@@ -30,6 +30,11 @@ api.interceptors.response.use(
   },
   (error) => {
     console.log("error:", error);
+
+    if (error.response.status === 401) {
+      window.alert('Por favor, realize o login')
+      window.location.href = "/login";
+    }
     return Promise.reject(error);
   }
 );

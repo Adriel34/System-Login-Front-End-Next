@@ -20,7 +20,6 @@ export default function Login() {
   const { signIn } = useLogin();
 
   const onSubmit  = async (data: SignInForm) => {
-    console.log("data", data);
     await signIn.mutateAsync(data);
   };
   return (

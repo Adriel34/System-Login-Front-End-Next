@@ -9,11 +9,20 @@ export type AllUsersType = {
   email: string;
 }
 
+export type UpdateUserType = {
+  id: number;
+  name: string;
+  email: string;
+  password: undefined;
+}
+
 export type NewUserType = {
   name: string;
   email: string;
   password: string;
+  confirmPassword: string;
 }
+
 
 export function useCrud() {
   
@@ -44,7 +53,7 @@ export function useCrud() {
   
     const updateUser = useMutation(async (data: AllUsersType) => {
       try {
-        const response = await api.post(UPDATE_USER_API, data);
+        const response = await api.patch(UPDATE_USER_API, data);
   
         if (response) {
           console.log(response);
